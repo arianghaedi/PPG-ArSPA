@@ -1,9 +1,6 @@
 import numpy as np
 from scipy.signal import butter, filtfilt, detrend, savgol_filter
 
-# Script below is the line-by-line processing part of the code for real-life PPG Signals. Any Questions, please me on contact a.ghaedi25@imperial.ac.uk
-
-
 def butter_bandpass_filter(data, lowcut, highcut, fs, order=4):
     """Butterworth bandpass with reflect-padding to reduce edge artefacts."""
     nyquist = 0.5 * fs
