@@ -1,6 +1,16 @@
 import numpy as np
 from scipy.signal import butter, filtfilt, detrend, savgol_filter
 
+"""
+Preprocessing utilities for PPG signals:
+- Bandpass filtering
+- Detrending
+- Savitzky-Golay smoothing
+- Robust scaling
+- Derivative calculation
+"""
+
+
 def butter_bandpass_filter(data, lowcut, highcut, fs, order=4):
     """Butterworth bandpass with reflect-padding to reduce edge artefacts."""
     nyquist = 0.5 * fs
