@@ -52,8 +52,11 @@ This overall package provides preprocessing and fiducial peak detection of the P
 # Usage Example (Step 2) 
 
 BASE_DIR = "/path/to/big-ideas-dataset"
+
 SAMPLING_RATE = 64  # Hz
+
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S.%f"
+
 CHUNKSIZE = 10**6
 
 # User's ability to choose which Patient's PPG/BVP Data to look at, along with data and duration they want 
