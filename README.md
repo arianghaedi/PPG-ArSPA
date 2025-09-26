@@ -28,19 +28,8 @@ This overall package provides preprocessing and fiducial peak detection of the P
 - Interbeat interval (IBI) calculation in milliseconds.  
 - Example plotting of detected peaks overlaid on the processed PPG signal.  
 
-# Repository Structure (For Better Understanding)
 
-PPG-ArSPA/
-│
-├── arspa folder /
-│   ├── __init__.py          # Makes package importable
-│   ├── preprocess.py        # Preprocessing functions for PPG - Required before Systolic Peak Detection 
-│   ├── peaks.py             # Systolic peak detection algorithm
-│
-├── README.md                # Project overview and instructions
-├── .gitignore               # Ignore build/OS-specific files
-
-## ----------------------------------------IMPORTANT TO LOOK AT AND IMPLEMENT IN YOUR SCRIPT----------------------------------
+## IMPORTANT TO LOOK AT AND IMPLEMENT IN YOUR SCRIPT
 # All libraries used throughout the Signal Processing and Peak detection (Step 1)
 
 import pandas as pd
