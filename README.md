@@ -56,9 +56,9 @@ SAMPLING_RATE = 64  # Hz
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S.%f"
 CHUNKSIZE = 10**6
 
-# -------------User's ability to choose which Patient's PPG/BVP Data to look at, along with data and duration they want   -------------------------
+# User's ability to choose which Patient's PPG/BVP Data to look at, along with data and duration they want 
 
-# Because the dataset is large and consists of 16 Patients' PPG data measured continuously for 8-10 days, this is done to speed up and look at specific segments more quickly and efficiently 
+Because the dataset is large and consists of 16 Patients' PPG data measured continuously for 8-10 days, this is done to speed up and look at specific segments more quickly and efficiently 
 
 def subject_paths(base_dir: str, subject_id: int):
     """Return correct path to BVP CSV given dataset structure .../<ID3>/<BVP_ID3>.csv"""
