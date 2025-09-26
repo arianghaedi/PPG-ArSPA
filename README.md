@@ -1,4 +1,4 @@
-# Adaptive Rule-based Systolic Peak Detection Algorithm (ArSPA) for Photoplethysmography (PPG) signals
+# Adaptive Rule-based Systolic Peak Detection Algorithm (ArSPA) Along with PPG Trough, Pulse Onset detection for Photoplethysmography (PPG) signals
 
 This overall package provides preprocessing and fiducial peak detection of the PPG Signal, which is originally collected from the Empatica E4 BVP device. It includes step-by-step code and functions for detecting systolic peaks, troughs, and pulse onsets, as well as extracting important cardiovascular features such as:
 
