@@ -2,7 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 
-# --------------------- User Configuration  ---------------------
+# -------------------------------------- User Configuration STEP (1)  -------------------------------------------
 
 BASE_DIR = "/path/to/big-ideas-dataset"
 SAMPLING_RATE = 64  # That is the Sampling rate (Hz) at which the raw PPG signal was acquired 
@@ -10,7 +10,7 @@ DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S.%f"
 CHUNKSIZE = 10**6
 
 
-# --------------------- Subject + time window selection ---------------------
+# ----------------------------------Subject + time window selection ------------------------------------
 
 def subject_paths(base_dir: str, subject_id: int):
     """
