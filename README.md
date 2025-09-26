@@ -69,11 +69,16 @@ def subject_paths(base_dir: str, subject_id: int):
     return bvp_path
 
 def prompt_time_window():
+
     """Prompt for start timestamp and duration like 30s, 2m, 10m, 1h."""
+    
     while True:
+    
         try:
             start_str = input("Enter start time (YYYY-MM-DD HH:MM:SS.ffffff): ").strip()
+            
             start_time = pd.to_datetime(start_str, format=DATETIME_FORMAT)
+            
             duration_str = input("Enter duration (e.g., 30s, 2m, 10m, 1h): ").strip().lower()
 
             if duration_str.endswith("s"):
