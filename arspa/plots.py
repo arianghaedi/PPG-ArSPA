@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 def plot_peaks_and_onsets(bvp_df, peaks, results):
     """
     Plot scaled PPG signal with systolic peaks, local minima, max slopes, and pulse onsets.
