@@ -1,8 +1,10 @@
 import numpy as np
 from scipy.signal import butter, filtfilt, detrend, savgol_filter
 
+#---------------------------------- Preprocessing Stage of the PPG Signal (STEP 2) ---------------------------
+
 """
-Preprocessing utilities for PPG signals:
+Preprocessing of the PPG signals (STEP 2):
 - Bandpass filtering
 - Detrending
 - Savitzky-Golay smoothing
