@@ -78,3 +78,37 @@ def load_bvp_window(bvp_path, start_time, end_time):
         raise ValueError("No BVP data found in the specified time range.")
 
     return df
+
+
+def compute_ibis_ms(peak_indices, start_time, fs):
+    """
+    Compute Interbeat Intervals (IBIs) in milliseconds from detected systolic peaks.
+    
+    Parameters
+    ----------
+    peak_indices : array-like
+        Indices of detected systolic peaks in the PPG signal.
+    start_time : pd.Timestamp
+        Starting datetime of the analysed segment.
+    fs : int
+        Sampling rate of the PPG signal (Hz).
+    
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with columns:
+        - 'timestamp': beat timestamps (datetime)
+        - 'ibi_ppg_ms': interbeat interval in milliseconds
+    """
+    if len(peak_indices) < 2:
+        return pd.DataFrame(columns=['timestamp', 'ibi_ppg_ms'])
+
+    peak_times = start_time + pd.to_timedelta(peak_indices / fs, unit="s")
+    ibis_ms = pd.Series(peak_times).diff().dt.total_seconds() * 1000.0
+
+    out = pd.DataFrame({
+        'timestamp': peak_times[1:],         # skip the first because diff() is NaN
+        'ibi_ppg_ms': ibis_ms[1:].round(2)   # round to 2 decimals
+    }).reset_index(drop=True)
+
+    return out
