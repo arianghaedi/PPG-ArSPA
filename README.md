@@ -32,22 +32,22 @@ This overall package provides preprocessing and fiducial peak detection of the P
 ## IMPORTANT TO LOOK AT AND IMPLEMENT IN YOUR SCRIPT
 # All libraries used throughout the Signal Processing and Peak detection (Step 1)
 
-import pandas as pd
-import matplotlib.pyplot as plt
-from scipy.signal import butter, filtfilt, detrend,cheby2
-import numpy as np
-from scipy.signal import find_peaks, correlate,savgol_filter
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-from scipy.ndimage import gaussian_filter1d
-import mplcursors
-import seaborn as sns
-from datetime import timedelta
-from sklearn.linear_model import LinearRegression
-from scipy.stats import kruskal
-from scipy.ndimage import binary_dilation
-from scipy.stats import spearmanr
-from scipy.stats import entropy
-from scipy.signal import welch
+- import pandas as pd
+- import matplotlib.pyplot as plt
+- from scipy.signal import butter, filtfilt, detrend,cheby2
+- import numpy as np
+- from scipy.signal import find_peaks, correlate,savgol_filter
+- from sklearn.metrics import mean_absolute_error, mean_squared_error
+- from scipy.ndimage import gaussian_filter1d
+- import mplcursors
+- import seaborn as sns
+- from datetime import timedelta
+- from sklearn.linear_model import LinearRegression
+- from scipy.stats import kruskal
+- from scipy.ndimage import binary_dilation
+- from scipy.stats import spearmanr
+- from scipy.stats import entropy
+- from scipy.signal import welch
 
 # Usage Example (Step 2) 
 
