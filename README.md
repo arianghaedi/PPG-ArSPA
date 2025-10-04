@@ -90,7 +90,7 @@ If your dataset uses different names (e.g. signal or time), open utils.py and ch
 6. Once you’ve updated those few lines, you can run: python main.py. And the rest of the processing (preprocessing, peak detection, pulse onset, plotting) will work automatically.
 
 
-## Section 3D All libraries used throughout the Signal Processing and Peak detection (Step 1)
+## Section 3D All libraries used throughout the Signal Processing and Peak detection
 
 - import pandas as pd
 - import matplotlib.pyplot as plt
