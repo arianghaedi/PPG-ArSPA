@@ -1,6 +1,6 @@
 # Comprehensive Photoplethysmography (PPG) Signal Processing and Fiducial Point Detection Framework (ArSPA)
 
-This package provides a complete framework for PPG signal preprocessing, adaptive systolic peak detection (ArSPA), and pulse onset identification. It was originally developed for signals collected using the Empatica E4 BVP sensor (fs 64Hz) as part of the 'Big Ideas Lab Glycemic Variability and Wearable Device Dataset'.
+This package provides a complete framework for PPG signal preprocessing, adaptive systolic peak detection (ArSPA), and pulse onset identification. It was originally developed for signals collected using the Empatica E4 BVP sensor as part of the 'Big Ideas Lab Glycemic Variability and Wearable Device Dataset'.
 
 ## Section 1 - About the Algorithm and Feature Extraction
 
@@ -30,7 +30,7 @@ ArSPA performs physiologically constrained, adaptive detection of fiducial point
 
 ---
 
-## Section 2B - Key Processing steps of the Systolic Peak Detection Algorithm 
+## Section 2B - Key Processing Steps of the Systolic Peak Detection Algorithm 
 
 - PPG preprocessing (detrending, bandpass filtering, Savitzky–Golay smoothing, robust scaling).  
 - Derivative calculation (dPPG) for upstroke validation.  
@@ -53,7 +53,7 @@ arspa/
 
 - big-ideas-dataset/  Example dataset folder (used in this particular project)
 
-Outside this folder, you will then have a script named 'main.py' which is the Main file to run the entire process
+Outside this folder, you will then have a script named 'main.py', which is the Main file to run the entire process
 
 ## Section 3B - How it works
 
@@ -65,7 +65,7 @@ Outside this folder, you will then have a script named 'main.py' which is the Ma
   
 - Sampling rate = 64 Hz, which is already set in the code.
 
-## Section 3C - If You Want to Use a Different Dataset ( please read this section) 
+## Section 3C - If You Want to Use a Different Dataset (Please read this Section) 
 
 You can use your own PPG dataset instead of the one provided.
 To do that safely, make sure to:
