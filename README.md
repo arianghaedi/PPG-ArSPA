@@ -154,7 +154,7 @@ Ghaedi, A. (2025). Adaptive Rule-based Systolic Peak Detection Algorithm (ArSPA)
 
 This project was conducted as part of the Final-year Biomedical Engineering research project by Arian Ghaedi, under the supervision of Professor Panicos A. Kyriacou at the Research Centre for Biomedical Engineering (RCBE), City, University of London – St George’s, University of London.
 
-Arian Ghaedi is currently a Postgraduate Researcher in the Department of Bioengineering, Imperial College London, based at the South Kensington and White City campuses.
+Arian Ghaedi is currently a Postgraduate Researcher in the Department of Bioengineering, Imperial College London, based at the South Kensington and White City campuses, London, England, United Kingdom 
 
 City, University of London – St George’s, University of London
 Northampton Square, London EC1V 0HB, United Kingdom
