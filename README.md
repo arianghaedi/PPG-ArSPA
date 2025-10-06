@@ -44,7 +44,7 @@ Your working directory should look like this, where inside a project you have al
 
 arspa/
 
-1 - __init__.py            # Required so Python recognises this as a module
+1 -: __init__.py            # Required so Python recognises this as a module
 2 - utils.py               # Handles loading data, user input, and IBI calculation
 3 - preprocess.py          # Cleans the PPG signal (detrending, filtering, scaling)
 4 - peaks.py               # Finds systolic peaks (Adaptive Rule-based Systolic Peak Algorithm)
